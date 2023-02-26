@@ -13,6 +13,8 @@ const player0El = document.querySelector(".player--0");
 const player1El = document.querySelector(".player--1");
 const current0El = document.querySelector(`#current--0`);
 const current1El = document.querySelector(`#current--1`);
+const nam0El = document.querySelector(`#name--0`);
+const name1El = document.querySelector(`#name--1`);
 
 // Setting-up the starting conditions...
 score0El.textContent = 0;
@@ -29,6 +31,8 @@ activePlayer = 0;
 isPlaying = true;
 
 const newGame = () => {
+  name0El.textContent = prompt("Player 1 Name ??")
+  name0El.textContent = prompt("Player 2 Name ??")
   isPlaying = true;
   currentScore = 0;
   document.getElementById(`current--${activePlayer}`).textContent =
