@@ -30,9 +30,10 @@ currentScore = 0;
 activePlayer = 0;
 isPlaying = true;
 
+name0El.textContent = prompt("Player 1 Name ??")
+name1El.textContent = prompt("Player 2 Name ??")
+
 const newGame = () => {
-  name0El.textContent = prompt("Player 1 Name ??")
-  name1El.textContent = prompt("Player 2 Name ??")
   isPlaying = true;
   currentScore = 0;
   document.getElementById(`current--${activePlayer}`).textContent =
